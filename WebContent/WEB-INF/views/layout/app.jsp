@@ -6,6 +6,16 @@
         <title>タスク管理アプリケーションを作ろう</title>
     </head>
     <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1>タスク管理アプリケーションを作ろう</h1>
+            </div>
+            <div id="content">
+                ${param.content}
+            </div>
+            <div id="footer">
 
+            </div>
+        </div>
     </body>
 </html>
