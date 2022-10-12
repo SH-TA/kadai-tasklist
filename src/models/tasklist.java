@@ -14,9 +14,13 @@ import javax.persistence.Table;
 @Entity
 @NamedQueries({
     @NamedQuery(
-        name = "getAlltasks",
-        query = "SELECT m FROM tasklist AS m ORDER BY m.id DESC"
-    )
+            name = "getAlltasks",
+            query = "SELECT m FROM tasklist AS m ORDER BY m.id DESC"
+            ),
+    @NamedQuery(
+            name = "gettasksCount",
+            query = "SELECT COUNT(m) FROM tasklist AS m"
+            )
 })
 @Table(name = "tasks")
 public class tasklist {
